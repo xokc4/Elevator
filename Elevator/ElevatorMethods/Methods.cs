@@ -62,7 +62,7 @@ namespace Elevator.ElevatorMethods
                 CloseElevator(IdElevators);
                 Console.WriteLine("Дверь закрывается");
                 int level = CountFloor-1;
-                Console.WriteLine("Опускается вниз");
+                Console.WriteLine("Едет вниз");
                 for (int i = CountFloor; i > Count; i--)
                 {
                     Thread.Sleep(2000);
@@ -82,7 +82,7 @@ namespace Elevator.ElevatorMethods
                 CloseElevator(IdElevators);
                 Console.WriteLine("Дверь закрывется");
                 int Level = CountFloor + 1;
-                Console.WriteLine("Поднимается вверх");
+                Console.WriteLine("Едет вверх");
                 for (int i = CountFloor; i < Count; i++)
                 {
                     Thread.Sleep(2000);
@@ -166,6 +166,12 @@ namespace Elevator.ElevatorMethods
             Thread.Sleep(60000);
             Console.WriteLine("Нет Связи");
         }
+        /// <summary>
+        /// метод по объединению двух методов(движения лифта)
+        /// </summary>
+        /// <param name="Choice"></param>
+        /// <param name="elevetarsId"></param>
+        /// <param name="FlooterNumbers"></param>
         public static void ElevatorMovementFull( int Choice,int elevetarsId, int FlooterNumbers)
         {
             ElevatorHaus elevator = new ElevatorHaus();
