@@ -16,7 +16,8 @@ internal class Program
     public static void StartProgramm()
     {
         int CountElevators = 0;
-        Console.WriteLine("На каком вы этаже?");
+        Console.WriteLine("На каком вы этаже? Чтобы вызвать диспетчера нажмите 22");
+        
         int FlooterNumbers = Convert.ToInt32(Console.ReadLine());
         try
         {
@@ -49,9 +50,10 @@ internal class Program
                     myThread1.Start();
                     break;
 
-                case 21:
+                case 22:
                     Console.WriteLine("вызв диспетчера");
                     Methods.Dispatcher();
+                    StartProgramm();
                     break;
                 case < 0:
                     Console.WriteLine("такого этажа нет");

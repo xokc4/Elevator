@@ -163,7 +163,7 @@ namespace Elevator.ElevatorMethods
         /// </summary>
         public static void Dispatcher()
         {
-            Thread.Sleep(60000);
+            Thread.Sleep(4000);
             Console.WriteLine("Нет Связи");
         }
         /// <summary>
