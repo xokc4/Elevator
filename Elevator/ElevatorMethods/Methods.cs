@@ -164,7 +164,7 @@ namespace Elevator.ElevatorMethods
         public static void Dispatcher()
         {
             Thread.Sleep(4000);
-            Console.WriteLine("Нет Связи");
+           
         }
         /// <summary>
         /// метод по объединению двух методов(движения лифта)

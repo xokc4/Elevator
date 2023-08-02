@@ -53,6 +53,7 @@ internal class Program
                 case 22:
                     Console.WriteLine("вызв диспетчера");
                     Methods.Dispatcher();
+                    Console.WriteLine("Временно не работает");
                     StartProgramm();
                     break;
                 case < 0:
