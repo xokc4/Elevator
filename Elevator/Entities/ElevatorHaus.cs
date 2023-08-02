@@ -11,18 +11,23 @@ namespace Elevator.Entities
     /// </summary>
     public  class ElevatorHaus
     {
-        public static int FloorElevator { get; set; }// этаж где находится лифт
-        public static string ConditionElevator { get; set; }// статус лифта
+        public int Idele { get; set; }//айди лифта
+        public  int FloorElevator { get; set; }// этаж где находится лифт
+        public  string ConditionElevator { get; set; }// статус лифта
+        public string ConditionDoor { get; set; }//статус дверей 
 
         public ElevatorHaus()
         {
             
         }
         //конструктор по созданию лифта
-        public ElevatorHaus(int floorElevator, string conditionElevator)
+        public ElevatorHaus(int id,  int floorElevator, string conditionElevator, string conditionDoor)
         {
+            Idele = id;
             FloorElevator = floorElevator;
             ConditionElevator = conditionElevator;
+            ConditionDoor = conditionDoor;
+            
         }
     }
    

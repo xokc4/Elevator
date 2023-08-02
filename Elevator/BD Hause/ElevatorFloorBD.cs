@@ -13,11 +13,11 @@ namespace Elevator.BD_Elevator
         /// Метод по созданию базы данных где находятся 2 лифта 
         /// </summary>
         /// <returns></returns>
-        public List<ElevatorHaus>  ElevatorCreatBD()
+        public static List<ElevatorHaus>  ElevatorCreatBD()
         {
             List<ElevatorHaus> elevators = new List<ElevatorHaus>();
-            elevators.Add(new ElevatorHaus(1, "стоит с открытыми дверьми)"));
-            elevators.Add(new ElevatorHaus(1, "стоит с открытыми дверьми)"));
+            elevators.Add(new ElevatorHaus(1,-1, "стоит с открытыми дверьми","двери открыты"));
+            elevators.Add(new ElevatorHaus(2,-1, "стоит с открытыми дверьми", "двери открыты"));
 
             return elevators;
         }
